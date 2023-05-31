@@ -1,10 +1,6 @@
 @import './constants';
 
 .guides {
-  h2 {
-    color: $black;
-  }
-  
   .container {
     display: flex;
     flex-flow: column;

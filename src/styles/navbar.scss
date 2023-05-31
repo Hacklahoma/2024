@@ -28,8 +28,11 @@
 
   .navigation {
     .container {
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      border: 1px solid rgba(0, 48, 133, 0.31);
       align-items: center;
-      background-color: #F5F2E8;
       box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
       box-sizing: border-box;
       display: flex;
@@ -96,7 +99,6 @@
       }
 
       b {
-        font-family: new-york-times, serif;
         font-size: 4em;
         float: none;
         position: absolute;
@@ -116,7 +118,6 @@
           background: none;
           border: 0;
           color: inherit;
-          font-family: 'Bebas Neue', 'Roboto';
           font-size: inherit;
           height: 100%;
           outline: none;
@@ -160,7 +161,7 @@
         z-index: 10;
 
         .line {
-          background: $black;
+          background-color: $text-primary;
           border-radius: 10px;
           height: 3px;
           margin: 7px 0;

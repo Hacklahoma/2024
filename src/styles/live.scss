@@ -1,10 +1,6 @@
 @import './constants';
 
-h2 {
-  color: #333333;
-}
 p {
-  font-family: "Times New Roman", serif;
   text-align: center;
   font-size: 20px;
   font-weight: bold;
@@ -57,7 +53,6 @@ p {
 
             h2 {
               text-align: center;
-              font-family: "Times New Roman", Serif, serif;
               font-size: 2.2em;
             }
             p {
@@ -79,7 +74,6 @@ p {
         .container {
           h1 {
             font-size: 1.7em;
-            font-family: "Times New Roman", serif;
           }
 
           .countdown {
@@ -183,7 +177,6 @@ p {
         border-radius: 4px;
         padding: 7px 14px;
         transition: transform 150ms;
-        font-family: "Times New Roman", serif;
       }
 
       &:hover {

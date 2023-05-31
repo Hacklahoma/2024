@@ -1,48 +1,29 @@
-import React from 'react';
-import '../../styles/header.scss';
-
-
-
+import React from "react";
+import "../../styles/header.scss";
+import Button from "../Button.js";
 
 /**
  * Contains all the header needs
  */
 const Header = () => (
+	<div className="header">
+		<div className="header-logo"></div>
+		<div className="content">
+			<div className="header-text">
+				<h1>Hacklahoma 2024</h1>
+				<div className="subcontent">
+					<p align="center">April 1st-2nd | University of Oklahoma</p>
+				</div>
+				<div className="registration" align="center">
+					<Button href="https://register.hacklahoma.org/>" primaryColor="#ffffff" secondaryColor="#000000" rounded>
+						Register Now!
+					</Button>
+				</div>
+			</div>
 
-  <div className="header">
-      <div className="header-logo"></div>
-      <div className="bird-container bird-container--one">
-          <div className="bird bird--one"></div>
-      </div>
-      <div className="bird-container bird-container--two">
-          <div className="bird bird--two"></div>
-      </div>
-
-      <div className="bird-container bird-container--three">
-          <div className="bird bird--three"></div>
-      </div>
-
-      <div className="bird-container bird-container--four">
-          <div className="bird bird--four"></div>
-      </div>
-    <div className="content">
-
-      <div className="header-text">
-
-        <h1>HACKLAHOMA 23</h1>
-
-        <div className="subcontent">
-          <p align="center">April 1st-2nd | University of Oklahoma</p>
-        </div>
-        <div className="registration" align="center">
-          <a href="https://register.hacklahoma.org/">Register Now!</a>
-        </div>
-      </div>
-
-      {/* <a href="/" className="register"><p>Register</p></a> */}
-
-    </div>
-  </div>
+			{/* <a href="/" className="register"><p>Register</p></a> */}
+		</div>
+	</div>
 );
 
 export default Header;

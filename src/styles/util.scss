@@ -1,0 +1,41 @@
+@import './constants';
+
+@mixin gradient($primaryColor, $secondaryColor) {
+	border-image: linear-gradient(30deg, $primaryColor 0%, $secondaryColor 100%) 1 round;
+	background: linear-gradient(30deg, $primaryColor 0%, $secondaryColor 100%);
+
+	&:hover {
+		box-shadow: 0 0 0.1rem 0.05rem rgba(255, 255, 255, 0.2),
+			2px 2px 6px
+				rgba(red($secondaryColor), green($secondaryColor), blue($secondaryColor), 0.4),
+			-2px -2px 6px rgba(red($primaryColor), green($primaryColor), blue($primaryColor), 0.4);
+	}
+
+	background-clip: text;
+	-webkit-background-clip: text;
+}
+
+.boxy {
+	color: rgba(255, 255, 255, 0);
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	padding: 0.25rem 1.25rem;
+	border-style: solid;
+	border-width: 2px;
+	transition: all 0.2s ease;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+    // default color
+	@include gradient($secondary, $tertiary);
+
+	&:hover {
+		color: rgba(255, 255, 255, 0.1);
+		text-shadow: 0 0 0.1rem rgba(255, 255, 255, 0.4);
+		cursor: pointer;
+	}
+}

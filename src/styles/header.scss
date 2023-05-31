@@ -1,287 +1,288 @@
-@import './constants';
+@import "./constants";
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
 .header {
-  animation: fadeIn 5s;
-  margin-top: $navbar-height;
-  padding-top: $section-vertical-margin;
-  //background-image: url('../images/hex.svg');
-  //background-blend-mode: darken;
-  //background-size: cover;
-  //background-repeat: repeat-x !important;
-  width: 100vw;
-  color: $black;
-  .header-logo {
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url('../images/hacklahoma_baby_pink.png');
-    justify-content: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 110%;
-    width: 20em;
-    height: 20em;
-  }
-  .scissor-tail {
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url('../images/scissor-logo.png');
-    background-size: 100%;
-    justify-content: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100px;
-    height: 100px;
-  }
-  p{
-    font-size: 0.9em;
-  }
-  .content {
-    display: flex;
-    justify-content: center;
-    position: relative;
-  }
-  
-  .header-text {
-    font-family: newspaper, serif;
-    font-size: 3em;
-    float: top;
-    align-content: center;
-  }
+	animation: fadeIn 5s;
+	margin-top: $navbar-height;
+	padding-top: $section-vertical-margin;
+	//background-image: url('../images/hex.svg');
+	//background-blend-mode: darken;
+	//background-size: cover;
+	//background-repeat: repeat-x !important;
+	width: 100vw;
+	background: rgb(3, 62, 140);
 
-  .subcontent {
-    font-family: newspaper, serif;
-    font-size: 1em;
-    align-content: center;
-  }
+	.header-logo {
+		margin-left: auto;
+		margin-right: auto;
+		background-image: url("../images/hacklahoma_baby_pink.png");
+		justify-content: center;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 110%;
+		width: 12rem;
+		height: 12rem;
+	}
+	.scissor-tail {
+		margin-left: auto;
+		margin-right: auto;
+		background-image: url("../images/scissor-logo.png");
+		background-size: 100%;
+		justify-content: center;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 100px;
+		height: 100px;
+	}
+	p {
+		font-size: 0.9em;
+	}
+	.content {
+		display: flex;
+		justify-content: center;
+		position: relative;
+	}
 
-  .registration {
-    font-family: newspaper, serif;
-    height: 45%;
-    padding-top: 40px;
-    box-sizing: border-box;
-    width: 100%;
-    font-size: 0.6em;
-    a {
-      align-content: center;
-      transition: background-color 0.25s ease;
-      font-size: 2em;
-      background: black;
-      color: #fff;
-      padding: 1rem 2.5rem 1rem 2.5rem;
-      border-radius: 12px;
-      align-content: center;
+	.header-text {
+		font-size: 3em;
+		float: top;
+		align-content: center;
+	}
 
-      &:active,
-      &:hover,
-      &.active {
-        background: darkgrey;
-      }
-    }
-  }
-  
+	.subcontent {
+		font-size: 1em;
+		align-content: center;
+	}
 
-  @media only screen and (max-width: 840px) {
-    .header-logo {
-      justify-content: center;
-      background-position: center;
-      margin:auto;
-      width: 16em;
-      height: 16em;
-    }
-    .header-text {
-      font-family: newspaper, serif;
-      font-size: 1.3em;
-      float: top;
-      align-content: center;
-    }
+	// .registration {
+	//   font-family: newspaper, serif;
+	//   height: 45%;
+	//   padding-top: 40px;
+	//   box-sizing: border-box;
+	//   width: 100%;
+	//   font-size: 0.6em;
+	//   a {
+	//     align-content: center;
+	//     transition: background-color 0.25s ease;
+	//     font-size: 2em;
+	//     background: black;
+	//     color: #fff;
+	//     padding: 1rem 2.5rem 1rem 2.5rem;
+	//     border-radius: 12px;
+	//     align-content: center;
 
-    .registration {
-      a {
-        font-size: 1.75rem;
-      }
-    }
+	//     &:active,
+	//     &:hover,
+	//     &.active {
+	//       background: darkgrey;
+	//     }
+	//   }
+	// }
 
-    .subcontent {
-      font-size: 1.6rem;
-    }
-  }
+	@media only screen and (max-width: 840px) {
+		.header-logo {
+			justify-content: center;
+			background-position: center;
+			margin: auto;
+			width: 16em;
+			height: 16em;
+		}
+		.header-text {
+			font-size: 1.3em;
+			float: top;
+			align-content: center;
+		}
 
-  @media only screen and (max-width: 570px) {
-    margin-top: $navbar-height-mobile;
+		.registration {
+			a {
+				font-size: 1.75rem;
+			}
+		}
 
-    .header-logo {
-      justify-content: center;
-      background-position: center;
-      margin:auto;
-      width: 10em;
-      height: 10em;
-      float: bottom;
-    }
+		.subcontent {
+			font-size: 1.6rem;
+		}
+	}
 
-    .header-text {
-      font-family: newspaper, serif;
-      font-size: 1em;
-      float: top;
-      align-content: center;
-    }
+	@media only screen and (max-width: 570px) {
+		margin-top: $navbar-height-mobile;
 
-    .subcontent {
-      font-size: 1.4rem;
-    }
+		.header-logo {
+			justify-content: center;
+			background-position: center;
+			margin: auto;
+			width: 10em;
+			height: 10em;
+			float: bottom;
+		}
 
-    .registration {
-      a {
-        font-size: 1.25rem;
-      }
-    }
-  }
-  .bird {
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg);
-    background-size: auto 100%;
-    width: 88px;
-    height: 125px;
-    will-change: background-position;
+		.header-text {
+			font-size: 1em;
+			float: top;
+			align-content: center;
+		}
 
-    animation-name: fly-cycle;
-    animation-timing-function: steps(10);
-    animation-iteration-count: infinite;
+		.subcontent {
+			font-size: 1.4rem;
+		}
 
-    &--one {
-      animation-duration: 1s;
-      animation-delay: -0.5s;
-    }
+		.registration {
+			a {
+				font-size: 1.25rem;
+			}
+		}
+	}
+	.bird {
+		background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells-new.svg);
+		background-size: auto 100%;
+		width: 88px;
+		height: 125px;
+		will-change: background-position;
 
-    &--two {
-      animation-duration: 0.9s;
-      animation-delay: -0.75s;
-    }
+		animation-name: fly-cycle;
+		animation-timing-function: steps(10);
+		animation-iteration-count: infinite;
 
-    &--three {
-      animation-duration: 1.25s;
-      animation-delay: -0.25s;
-    }
+		&--one {
+			animation-duration: 1s;
+			animation-delay: -0.5s;
+		}
 
-    &--four {
-      animation-duration: 1.1s;
-      animation-delay: -0.5s;
-    }
-  }
+		&--two {
+			animation-duration: 0.9s;
+			animation-delay: -0.75s;
+		}
 
-  .bird-container {
-    position: absolute;
-    top: 20%;
-    left: -10%;
-    transform: scale(0) translateX(-10vw);
-    will-change: transform;
+		&--three {
+			animation-duration: 1.25s;
+			animation-delay: -0.25s;
+		}
 
-    animation-name: fly-right-one;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+		&--four {
+			animation-duration: 1.1s;
+			animation-delay: -0.5s;
+		}
+	}
 
-    &--one {
-      top: 10%;
-      animation-duration: 12s;
-      animation-delay: 0s;
-    }
+	.bird-container {
+		position: absolute;
+		top: 20%;
+		left: -10%;
+		transform: scale(0) translateX(-10vw);
+		will-change: transform;
 
-    &--two {
-      animation-duration: 16s;
-      animation-delay: 1s;
-    }
+		animation-name: fly-right-one;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
 
+		&--one {
+			top: 10%;
+			animation-duration: 12s;
+			animation-delay: 0s;
+		}
 
-    &--three {
-      top: 30%;
-      animation-duration: 14.6s;
-      animation-delay: 9.5s;
-    }
+		&--two {
+			animation-duration: 16s;
+			animation-delay: 1s;
+		}
 
-    &--four {
-      animation-duration: 16s;
-      animation-delay: 10.25s;
-    }
+		&--three {
+			top: 30%;
+			animation-duration: 14.6s;
+			animation-delay: 9.5s;
+		}
 
-  }
+		&--four {
+			animation-duration: 16s;
+			animation-delay: 10.25s;
+		}
+	}
 
-  @keyframes fly-cycle {
+	@keyframes fly-cycle {
+		100% {
+			background-position: -900px 0;
+		}
+	}
 
-    100% {
-      background-position: -900px 0;
-    }
+	@keyframes fly-right-one {
+		0% {
+			transform: scale(0.3) translateX(-10vw);
+		}
 
-  }
+		10% {
+			transform: translateY(2vh) translateX(10vw) scale(0.4);
+		}
 
-  @keyframes fly-right-one {
+		20% {
+			transform: translateY(0vh) translateX(30vw) scale(0.5);
+		}
 
-    0% {
-      transform: scale(0.3) translateX(-10vw);
-    }
+		30% {
+			transform: translateY(4vh) translateX(50vw) scale(0.6);
+		}
 
-    10% {
-      transform: translateY(2vh) translateX(10vw) scale(0.4);
-    }
+		40% {
+			transform: translateY(2vh) translateX(70vw) scale(0.6);
+		}
 
-    20% {
-      transform: translateY(0vh) translateX(30vw) scale(0.5);
-    }
+		50% {
+			transform: translateY(0vh) translateX(90vw) scale(0.6);
+		}
 
-    30% {
-      transform: translateY(4vh) translateX(50vw) scale(0.6);
-    }
+		60% {
+			transform: translateY(0vh) translateX(110vw) scale(0.6);
+		}
 
-    40% {
-      transform: translateY(2vh) translateX(70vw) scale(0.6);
-    }
+		100% {
+			transform: translateY(0vh) translateX(110vw) scale(0.6);
+		}
+	}
 
-    50% {
-      transform: translateY(0vh) translateX(90vw) scale(0.6);
-    }
+	@keyframes fly-right-two {
+		0% {
+			transform: translateY(-2vh) translateX(-10vw) scale(0.5);
+		}
 
-    60% {
-      transform: translateY(0vh) translateX(110vw) scale(0.6);
-    }
+		10% {
+			transform: translateY(0vh) translateX(10vw) scale(0.4);
+		}
 
-    100% {
-      transform: translateY(0vh) translateX(110vw) scale(0.6);
-    }
+		20% {
+			transform: translateY(-4vh) translateX(30vw) scale(0.6);
+		}
 
-  }
+		30% {
+			transform: translateY(1vh) translateX(50vw) scale(0.45);
+		}
 
-  @keyframes fly-right-two {
+		40% {
+			transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
+		}
 
-    0% {
-      transform: translateY(-2vh) translateX(-10vw) scale(0.5);
-    }
+		50% {
+			transform: translateY(0vh) translateX(90vw) scale(0.45);
+		}
 
-    10% {
-      transform: translateY(0vh) translateX(10vw) scale(0.4);
-    }
+		51% {
+			transform: translateY(0vh) translateX(110vw) scale(0.45);
+		}
 
-    20% {
-      transform: translateY(-4vh) translateX(30vw) scale(0.6);
-    }
-
-    30% {
-      transform: translateY(1vh) translateX(50vw) scale(0.45);
-    }
-
-    40% {
-      transform: translateY(-2.5vh) translateX(70vw) scale(0.5);
-    }
-
-    50% {
-      transform: translateY(0vh) translateX(90vw) scale(0.45);
-    }
-
-    51% {
-      transform: translateY(0vh) translateX(110vw) scale(0.45);
-    }
-
-    100% {
-      transform: translateY(0vh) translateX(110vw) scale(0.45);
-    }
-  }
+		100% {
+			transform: translateY(0vh) translateX(110vw) scale(0.45);
+		}
+	}
 }

@@ -7,7 +7,6 @@
   justify-content: center;
 
   .box {
-    background-image: url('../images/triangle.svg');
     background-size: 50%;
     align-items: center;
     border-radius: 6px;
@@ -20,14 +19,7 @@
     text-align: center;
     width: $content-width;
 
-    h3 {
-      color: #333;
-      font-family: newspaper, Serif, serif;
-    }
-
     p {
-      color: #333;
-      font-family: "Times New Roman", Serif, serif;
       max-width: 520px;
     }
   }
